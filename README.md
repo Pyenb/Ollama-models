@@ -55,13 +55,14 @@ Options:
   -m, --model-name    Name of the model to pull and backup (e.g. "moondream", "gemma2:2b", "llama3.1:70b").
   -d, --dest-folder   Path to the destination folder where the tar.gz file will be moved.
   -f, --model-folder  Path to the ollama model folder (default: /usr/share/ollama/.ollama/models).
+  --no-delete         Do not delete the original model folder contents after moving.
   -h, --help          Display this help message and exit.
 
 If no options are provided, the script will display this help message.
 
 Examples:
   ollama-exporter.sh -m moondream -d /path/to/backup -f /custom/path/to/models
-  ollama-exporter.sh -m llama3.1 -d /home/pyenb/Daten/Backups/Ollama/models
+  ollama-exporter.sh -m llama3.1:70b -d /home/pyenb/Daten/Backups/Ollama/models
 ```
 
 ###### This script is currently WIP and Linux only. Requires `ollama, rclone, pv and pigz` to be installed
