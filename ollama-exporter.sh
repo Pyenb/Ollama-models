@@ -10,7 +10,7 @@ check_success() {
 
 # Function to check if a command exists
 command_exists() {
-    command -v "$1" >/dev/null 2>&1 || { echo "$1 command not found. Please install it."; exit 1; }
+    command -v "$1" >/dev/null 2>&1 || { echo "$1 command not found. Please install it. Exiting..."; exit 1; }
 }
 
 # Ensure required commands exist
@@ -79,7 +79,7 @@ done
 
 # Validate required arguments
 if [ -z "$MODEL_NAME" ] || [ -z "$DEST_FOLDER" ]; then
-    echo "Error: Both model name and destination folder are required."
+    echo "Error: Both model name and destination folder are required. Exiting..."
     show_help
     exit 1
 fi
@@ -88,12 +88,12 @@ TAR_FILE_NAME="${MODEL_NAME}.tar.gz"
 
 # Check if the destination folder exists and is writable
 if [ ! -d "$DEST_FOLDER" ]; then
-    echo "Error: Destination folder does not exist."
+    echo "Error: Destination folder does not exist. Exiting..."
     exit 1
 fi
 
 if [ ! -w "$DEST_FOLDER" ]; then
-    echo "Error: Destination folder is not writable."
+    echo "Error: Destination folder is not writable. Exiting..."
     exit 1
 fi
 
@@ -103,14 +103,30 @@ if [ -e "${DEST_FOLDER}/${TAR_FILE_NAME}" ]; then
     exit 0
 fi
 
+# Check if model folder is not empty
+if [ -n "$(ls -A "$MODEL_FOLDER")" ]; then
+    read -p "Ollama model folder is not empty. Do you want to delete the contents? (y/n): " -n 1 -r
+    echo
+
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
+        echo "Deleting contents of the model folder..."
+        rm -rf "$MODEL_FOLDER"/*
+        check_success "Failed to clean the model folder."
+        echo "Model folder cleaned successfully."
+    else
+        echo "Exiting..."
+        exit 1
+    fi
+fi
+
 # Pull the Ollama model
 echo "Pulling the Ollama model: ${MODEL_NAME}..."
 ollama pull "${MODEL_NAME}"
 check_success "Failed to pull the model."
 
-# Check if the model folder exists and has content
-if [ ! -d "$MODEL_FOLDER" ] || [ -z "$(ls -A "$MODEL_FOLDER")" ]; then
-    echo "Model folder is empty or does not exist."
+# Check if model folder has content after pulling
+if [ -z "$(ls -A "$MODEL_FOLDER")" ]; then
+    echo "Ollama model folder is empty after pulling the model. Exiting..."
     exit 1
 fi
 
