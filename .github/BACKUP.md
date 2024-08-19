@@ -1,19 +1,19 @@
-# Ollama model repository
+# Ollama model repository 🦙
 
 A few weeks ago I wanted to run [ollama](https://github.com/ollama/ollama/) on a machine, that was not connected to the internet. After a bit of searching, around, I found [this issue](https://github.com/ollama/ollama/issues/696), which basically said that the models are not just available as a download as a standalone file. So I decided to download the models myself, using a machine that had internet access, and make them available for everyone, in form of a compressed folder. This way, setting up your desired model will be as simple as moving a few files around.
 
 ## Table of contents 📚
 
-- [Installation](#installation-)
+- [Getting started](#getting-started-)
 - [Download links](#download-links-)
 - [Manual export](#manual-export-)
 - [FAQ](#faq-)
 
-## Installation 🚀
+## Getting started 🚀
 
 1. Download the model you want to use from the [download links](#download-links-) section.
 2. Extract the downloaded file `.tar.gz` file. Then extract the `.tar` file located inside the extracted folder.
-3. Move the extracted folder `models` to the root of the `ollama` repository. See [where-are-models-stored](https://github.com/ollama/ollama/blob/main/docs/faq.md#where-are-models-stored), from the official `ollama` repository for more information.
+3. Move the extracted folder `models` to the root of your `.ollama` folder (e.g. `/usr/share/ollama/.ollama/models`). See [where-are-models-stored](https://github.com/ollama/ollama/blob/main/docs/faq.md#where-are-models-stored), from the official `ollama` FAQ for more information.
 4. You should now be able to use the model you downloaded. Executing `ollama run MODEL_NAME` should work as expected, without it trying to download the model.
 
 ## Download links 📥
@@ -21,7 +21,9 @@ A few weeks ago I wanted to run [ollama](https://github.com/ollama/ollama/) on a
 <details>
 <summary>Click to expand</summary>
 
-<!-- MODEL_TABLE -->
+<!-- MODEL_TABLE_START -->
+
+<!-- MODEL_TABLE_END -->
 </details>
 
 Or you can of course just browse the [models folder](https://data.pyenb.network/Github/Ollama/models/) directly and download the model you want.
@@ -43,13 +45,14 @@ Options:
   -m, --model-name    Name of the model to pull and backup (e.g. "moondream", "gemma2:2b", "llama3.1:70b").
   -d, --dest-folder   Path to the destination folder where the tar.gz file will be moved.
   -f, --model-folder  Path to the ollama model folder (default: /usr/share/ollama/.ollama/models).
+  --no-delete         Do not delete the original model folder contents after moving.
   -h, --help          Display this help message and exit.
 
 If no options are provided, the script will display this help message.
 
 Examples:
   ollama-exporter.sh -m moondream -d /path/to/backup -f /custom/path/to/models
-  ollama-exporter.sh -m llama3.1 -d /home/pyenb/Daten/Backups/Ollama/models
+  ollama-exporter.sh -m llama3.1:70b -d /home/pyenb/Daten/Backups/Ollama/models
 ```
 
 ###### This script is currently WIP and Linux only. Requires `ollama, rclone, pv and pigz` to be installed
