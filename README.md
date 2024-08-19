@@ -27,7 +27,9 @@ A few weeks ago I wanted to run [ollama](https://github.com/ollama/ollama/) on a
 | codellama | 7B | 2024-08-18 16:48 | 3.4G | [Download](https://data.pyenb.network/Github/Ollama/models/codellama:7b.tar.gz) |
 | gemma2 | 2B | 2024-08-18 15:45 | 1.5G | [Download](https://data.pyenb.network/Github/Ollama/models/gemma2:2b.tar.gz) |
 | gemma2 | 9B | 2024-08-18 18:24 | 4.8G | [Download](https://data.pyenb.network/Github/Ollama/models/gemma2:9b.tar.gz) |
+| gemma2 | 27B | 2024-08-19 17:23 | 14G | [Download](https://data.pyenb.network/Github/Ollama/models/gemma2:27b.tar.gz) |
 | llama2-uncensored | 7B | 2024-08-18 16:32 | 3.4G | [Download](https://data.pyenb.network/Github/Ollama/models/llama2-uncensored:7b.tar.gz) |
+| llama3.1 | 8B | 2024-08-19 17:31 | 4.1G | [Download](https://data.pyenb.network/Github/Ollama/models/llama3.1:8b.tar.gz) |
 | llama3.1 | 70B | 2024-08-18 19:51 | 35G | [Download](https://data.pyenb.network/Github/Ollama/models/llama3.1:70b.tar.gz) |
 | llama3 | 8B | 2024-08-18 20:13 | 4.1G | [Download](https://data.pyenb.network/Github/Ollama/models/llama3:8b.tar.gz) |
 | mistral-nemo | 12B | 2024-08-19 15:27 | 6.3G | [Download](https://data.pyenb.network/Github/Ollama/models/mistral-nemo:12b.tar.gz) |
@@ -35,7 +37,7 @@ A few weeks ago I wanted to run [ollama](https://github.com/ollama/ollama/) on a
 | moondream | 1.8B | 2024-08-18 16:29 | 1.4G | [Download](https://data.pyenb.network/Github/Ollama/models/moondream:1.8b.tar.gz) |
 | phi3 | 3.8B | 2024-08-18 16:20 | 1.9G | [Download](https://data.pyenb.network/Github/Ollama/models/phi3:3.8b.tar.gz) |
 | qwen | 0.5B | 2024-08-19 14:48 | 356M | [Download](https://data.pyenb.network/Github/Ollama/models/qwen:0.5b.tar.gz) |
-| qwen | 32B | 1970-01-01 01:00 | 9.9G | [Download](https://data.pyenb.network/Github/Ollama/models/qwen:32b.tar.gz) |
+| qwen | 32B | 2024-08-19 15:01 | 16G | [Download](https://data.pyenb.network/Github/Ollama/models/qwen:32b.tar.gz) |
 <!-- MODEL_TABLE_END -->
 </details>
 
