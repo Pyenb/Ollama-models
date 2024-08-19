@@ -1,0 +1,38 @@
+import requests
+from bs4 import BeautifulSoup
+
+URL = "https://data.pyenb.network/Github/Ollama/models/"
+
+try:
+    response = requests.get(URL)
+except:
+    print("Failed to fetch the page. Exiting...")
+    exit(1)
+html_content = response.text
+soup = BeautifulSoup(html_content, 'html.parser')
+table = soup.find('table')
+rows = table.find_all('tr')[2:]
+markdown_table = "| Model Name | Last Modified | Size | Download Link |\n| --- | --- | --- | --- |\n"
+
+for row in rows:
+    columns = row.find_all('td')
+    if len(columns) < 4:
+        continue
+    file_name = columns[1].find('a').get_text()
+    if file_name == "Parent Directory":
+        continue
+    last_modified = columns[2].get_text().strip()
+    size = columns[3].get_text().strip()
+    file_url = URL + file_name
+    file_name = file_name.replace('.tar.gz', '')
+    
+    markdown_table += f"| {file_name} | {last_modified} | {size} | [Download]({file_url}) |\n"
+
+with open("README.md", "r", encoding="utf8") as file:
+    readme = file.read()
+
+readme = readme.split("<!-- MODEL_TABLE -->")
+readme = readme[0] + "<!-- MODEL_TABLE -->\n" + markdown_table + readme[1]
+
+with open("README.md", "w+", encoding="utf8") as file:
+    file.write(readme)
