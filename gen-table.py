@@ -33,7 +33,7 @@ for row in rows:
         model = file_name
         parameters = '---'
     
-    markdown_table += f"| {model} | {parameters} | {last_modified} | {size} | [Download]({file_url}) |\n"
+    markdown_table += f"| {model} | {parameters.upper()} | {last_modified} | {size} | [Download]({file_url}) |\n"
 
 with open("README.md", "r", encoding="utf8") as file:
     readme = file.read()
