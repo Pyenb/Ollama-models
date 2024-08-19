@@ -97,6 +97,12 @@ if [ ! -w "$DEST_FOLDER" ]; then
     exit 1
 fi
 
+# Check if the model has already been compressed to the destination folder
+if [ -e "${DEST_FOLDER}/${TAR_FILE_NAME}" ]; then
+    echo "${TAR_FILE_NAME} already exists in the destination folder. Exiting..."
+    exit 0
+fi
+
 # Pull the Ollama model
 echo "Pulling the Ollama model: ${MODEL_NAME}..."
 ollama pull "${MODEL_NAME}"
