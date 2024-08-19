@@ -4,16 +4,16 @@ A few weeks ago I wanted to run [ollama](https://github.com/ollama/ollama/) on a
 
 ## Table of contents 📚
 
-- [Installation](#installation-)
+- [Getting started](#getting-started-)
 - [Download links](#download-links-)
 - [Manual export](#manual-export-)
 - [FAQ](#faq-)
 
-## Installation 🚀
+## Getting started 🚀
 
 1. Download the model you want to use from the [download links](#download-links-) section.
 2. Extract the downloaded file `.tar.gz` file. Then extract the `.tar` file located inside the extracted folder.
-3. Move the extracted folder `models` to the root of the `ollama` repository. See [where-are-models-stored](https://github.com/ollama/ollama/blob/main/docs/faq.md#where-are-models-stored), from the official `ollama` FAQ for more information.
+3. Move the extracted folder `models` to the root of the `.ollama` folder (e.g. `/usr/share/ollama/.ollama/models`). See [where-are-models-stored](https://github.com/ollama/ollama/blob/main/docs/faq.md#where-are-models-stored), from the official `ollama` FAQ for more information.
 4. You should now be able to use the model you downloaded. Executing `ollama run MODEL_NAME` should work as expected, without it trying to download the model.
 
 ## Download links 📥
