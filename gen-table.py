@@ -31,8 +31,9 @@ for row in rows:
 with open("README.md", "r", encoding="utf8") as file:
     readme = file.read()
 
-readme = readme.split("<!-- MODEL_TABLE -->")
-readme = readme[0] + "<!-- MODEL_TABLE -->\n" + markdown_table + readme[1]
+readme = readme.split("<!-- MODEL_TABLE_START -->")
+readme[1] = readme[1].split("<!-- MODEL_TABLE_END -->")[1]
+readme = readme[0] + "<!-- MODEL_TABLE_START -->\n" + markdown_table + "<!-- MODEL_TABLE_END -->" + readme[1]
 
 with open("README.md", "w+", encoding="utf8") as file:
     file.write(readme)
