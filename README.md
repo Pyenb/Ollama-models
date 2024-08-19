@@ -22,18 +22,18 @@ A few weeks ago I wanted to run [ollama](https://github.com/ollama/ollama/) on a
 <summary>Click to expand</summary>
 
 <!-- MODEL_TABLE_START -->
-| Model Name | Last Modified | Size | Download Link |
-| --- | --- | --- | --- |
-| codellama | 2024-08-18 16:48 | 3.4G | [Download](https://data.pyenb.network/Github/Ollama/models/codellama.tar.gz) |
-| gemma2 | 2024-08-18 18:24 | 4.8G | [Download](https://data.pyenb.network/Github/Ollama/models/gemma2.tar.gz) |
-| gemma2:2b | 2024-08-18 15:45 | 1.5G | [Download](https://data.pyenb.network/Github/Ollama/models/gemma2:2b.tar.gz) |
-| llama2-uncensored | 2024-08-18 16:32 | 3.4G | [Download](https://data.pyenb.network/Github/Ollama/models/llama2-uncensored.tar.gz) |
-| llama3.1:70b | 2024-08-18 19:51 | 35G | [Download](https://data.pyenb.network/Github/Ollama/models/llama3.1:70b.tar.gz) |
-| llama3:8b | 2024-08-18 20:13 | 4.1G | [Download](https://data.pyenb.network/Github/Ollama/models/llama3:8b.tar.gz) |
-| mistral | 2024-08-18 20:08 | 3.6G | [Download](https://data.pyenb.network/Github/Ollama/models/mistral.tar.gz) |
-| moondream | 2024-08-18 16:29 | 1.4G | [Download](https://data.pyenb.network/Github/Ollama/models/moondream.tar.gz) |
-| phi3 | 2024-08-18 16:20 | 1.9G | [Download](https://data.pyenb.network/Github/Ollama/models/phi3.tar.gz) |
-| qwen:0.5b | 2024-08-19 14:48 | 356M | [Download](https://data.pyenb.network/Github/Ollama/models/qwen:0.5b.tar.gz) |
+| Model | Parameters | Last Modified | Size | Download Link |
+| --- | --- | --- | --- | --- |
+| codellama | 7b | 2024-08-18 16:48 | 3.4G | [Download](https://data.pyenb.network/Github/Ollama/models/codellama:7b.tar.gz) |
+| gemma2 | 2b | 2024-08-18 15:45 | 1.5G | [Download](https://data.pyenb.network/Github/Ollama/models/gemma2:2b.tar.gz) |
+| gemma2 | 9b | 2024-08-18 18:24 | 4.8G | [Download](https://data.pyenb.network/Github/Ollama/models/gemma2:9b.tar.gz) |
+| llama2-uncensored | 7b | 2024-08-18 16:32 | 3.4G | [Download](https://data.pyenb.network/Github/Ollama/models/llama2-uncensored:7b.tar.gz) |
+| llama3.1 | 70b | 2024-08-18 19:51 | 35G | [Download](https://data.pyenb.network/Github/Ollama/models/llama3.1:70b.tar.gz) |
+| llama3 | 8b | 2024-08-18 20:13 | 4.1G | [Download](https://data.pyenb.network/Github/Ollama/models/llama3:8b.tar.gz) |
+| mistral | 7b | 2024-08-18 20:08 | 3.6G | [Download](https://data.pyenb.network/Github/Ollama/models/mistral:7b.tar.gz) |
+| moondream | 1.8b | 2024-08-18 16:29 | 1.4G | [Download](https://data.pyenb.network/Github/Ollama/models/moondream:1.8b.tar.gz) |
+| phi3 | 3.8b | 2024-08-18 16:20 | 1.9G | [Download](https://data.pyenb.network/Github/Ollama/models/phi3:3.8b.tar.gz) |
+| qwen | 0.5b | 2024-08-19 14:48 | 356M | [Download](https://data.pyenb.network/Github/Ollama/models/qwen:0.5b.tar.gz) |
 <!-- MODEL_TABLE_END -->
 </details>
 
