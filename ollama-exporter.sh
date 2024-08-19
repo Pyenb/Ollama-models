@@ -101,9 +101,9 @@ else
 fi
 
 # Move the tar.gz file to the destination folder using rclone
-echo "Moving the tar.gz file to the destination folder using rclone..."
+echo "Moving the compressed file..."
 rclone move "${OLLAMA_ROOT}/${TAR_FILE_NAME}" "${DEST_FOLDER}/" --progress
-check_success "Failed to move the tar.gz file."
+check_success "Failed to move the compressed file."
 
 # Delete the original model folder contents
 read -p "Press Enter to continue with deletion or Ctrl+C to cancel..."
