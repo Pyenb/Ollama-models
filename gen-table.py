@@ -17,11 +17,15 @@ for row in rows:
     columns = row.find_all('td')
     if len(columns) < 4:
         continue
-    file_name = columns[1].find('a').get_text().strip()
     
+    file_name = columns[1].find('a').get_text().strip()
     if file_name == "Parent Directory":
         continue
+    
     last_modified = columns[2].get_text().strip()
+    if '1970' in last_modified:
+        continue
+    
     size = columns[3].get_text().strip()
     
     file_url = URL + file_name
