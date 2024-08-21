@@ -1,5 +1,7 @@
 # Ollama model repository 🦙
 
+![Update download links](https://github.com/Pyenb/Ollama-models/actions/workflows/main.yaml/badge.svg)
+
 A few weeks ago I wanted to run [ollama](https://github.com/ollama/ollama/) on a machine, that was not connected to the internet. After a bit of searching, around, I found [this issue](https://github.com/ollama/ollama/issues/696), which basically said that the models are not just available as a download as a standalone file. So I decided to download the models myself, using a machine that had internet access, and make them available for everyone, in form of a compressed folder. This way, setting up your desired model will be as simple as moving a few files around.
 
 ## Table of contents 📚
