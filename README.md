@@ -21,7 +21,7 @@ A few weeks ago I wanted to run [ollama](https://github.com/ollama/ollama/) on a
 ## Download links 📥
 
 > [!IMPORTANT]
-> Due to Contabo limiting my bandwidth to only 100 Mbit/s because my STORAGE VPS is exceeding their set average bandwidth, I will soon be adding alternative download links. These will include torrents and platforms like Pixeldrain. Contabo did suggest an alternative, but it starts at €40/month with about 1/4 of the storage, so that definitely won't happen.
+> Due to Contabo limiting my bandwidth to only 100 Mbit/s because my STORAGE VPS is exceeding their set average bandwidth, I added torrents and bought a Seedbox. Feel free to download an seed them! Contabo did suggest an alternative, but it starts at €40/month with about 1/4 of the storage, so that definitely won't happen.
 
 <!-- MODEL_TABLE_START -->
 | Model | Parameters | Last Modified | Size | Download Links |
