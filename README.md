@@ -45,6 +45,7 @@ A few weeks ago I wanted to run [ollama](https://github.com/ollama/ollama/) on a
 | phi3 | 3.8B | 2024-08-18 16:20 | 1.9G | [Download](https://data.pyenb.network/Github/Ollama/models/phi3:3.8b.tar.gz) |
 | qwen | 0.5B | 2024-08-19 14:48 | 356M | [Download](https://data.pyenb.network/Github/Ollama/models/qwen:0.5b.tar.gz) |
 | qwen | 32B | 2024-08-19 15:01 | 16G | [Download](https://data.pyenb.network/Github/Ollama/models/qwen:32b.tar.gz) |
+| torrents/ | --- | 2024-10-07 01:19 | - | [Download](https://data.pyenb.network/Github/Ollama/models/torrents/) |
 <!-- MODEL_TABLE_END -->
 </details>
 
