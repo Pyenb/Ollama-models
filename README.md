@@ -23,30 +23,26 @@ A few weeks ago I wanted to run [ollama](https://github.com/ollama/ollama/) on a
 > [!IMPORTANT]
 > Due to Contabo limiting my bandwidth to only 100 Mbit/s because my STORAGE VPS is exceeding their set average bandwidth, I will soon be adding alternative download links. These will include torrents and platforms like Pixeldrain. Contabo did suggest an alternative, but it starts at €40/month with about 1/4 of the storage, so that definitely won't happen.
 
-<details>
-<summary>DOWNLOAD LINKS | Click to expand</summary>
-
 <!-- MODEL_TABLE_START -->
-| Model | Parameters | Last Modified | Size | Download Link |
+| Model | Parameters | Last Modified | Size | Download Links |
 | --- | --- | --- | --- | --- |
-| codellama | 7B | 2024-08-18 16:48 | 3.4G | [Download](https://data.pyenb.network/Github/Ollama/models/codellama:7b.tar.gz) |
-| gemma2 | 2B | 2024-08-18 15:45 | 1.5G | [Download](https://data.pyenb.network/Github/Ollama/models/gemma2:2b.tar.gz) |
-| gemma2 | 9B | 2024-08-18 18:24 | 4.8G | [Download](https://data.pyenb.network/Github/Ollama/models/gemma2:9b.tar.gz) |
-| gemma2 | 27B | 2024-08-19 17:23 | 14G | [Download](https://data.pyenb.network/Github/Ollama/models/gemma2:27b.tar.gz) |
-| llama2-uncensored | 7B | 2024-08-18 16:32 | 3.4G | [Download](https://data.pyenb.network/Github/Ollama/models/llama2-uncensored:7b.tar.gz) |
-| llama3.1 | 8B | 2024-08-19 17:31 | 4.1G | [Download](https://data.pyenb.network/Github/Ollama/models/llama3.1:8b.tar.gz) |
-| llama3.1 | 70B | 2024-08-18 19:51 | 35G | [Download](https://data.pyenb.network/Github/Ollama/models/llama3.1:70b.tar.gz) |
-| llama3.2 | 1B | 2024-10-07 00:38 | 1.2G | [Download](https://data.pyenb.network/Github/Ollama/models/llama3.2:1b.tar.gz) |
-| llama3.2 | 3B | 2024-10-07 00:36 | 1.8G | [Download](https://data.pyenb.network/Github/Ollama/models/llama3.2:3b.tar.gz) |
-| llama3 | 8B | 2024-08-18 20:13 | 4.1G | [Download](https://data.pyenb.network/Github/Ollama/models/llama3:8b.tar.gz) |
-| mistral-nemo | 12B | 2024-08-19 15:27 | 6.3G | [Download](https://data.pyenb.network/Github/Ollama/models/mistral-nemo:12b.tar.gz) |
-| mistral | 7B | 2024-08-18 20:08 | 3.6G | [Download](https://data.pyenb.network/Github/Ollama/models/mistral:7b.tar.gz) |
-| moondream | 1.8B | 2024-08-18 16:29 | 1.4G | [Download](https://data.pyenb.network/Github/Ollama/models/moondream:1.8b.tar.gz) |
-| phi3 | 3.8B | 2024-08-18 16:20 | 1.9G | [Download](https://data.pyenb.network/Github/Ollama/models/phi3:3.8b.tar.gz) |
-| qwen | 0.5B | 2024-08-19 14:48 | 356M | [Download](https://data.pyenb.network/Github/Ollama/models/qwen:0.5b.tar.gz) |
-| qwen | 32B | 2024-08-19 15:01 | 16G | [Download](https://data.pyenb.network/Github/Ollama/models/qwen:32b.tar.gz) |
+| codellama | 7B | 2024-08-18 16:48 | 3.4G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/codellama:7b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/codellama:7b.tar.gz.torrent) |
+| gemma2 | 2B | 2024-08-18 15:45 | 1.5G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/gemma2:2b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/gemma2:2b.tar.gz.torrent) |
+| gemma2 | 9B | 2024-08-18 18:24 | 4.8G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/gemma2:9b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/gemma2:9b.tar.gz.torrent) |
+| gemma2 | 27B | 2024-08-19 17:23 | 14G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/gemma2:27b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/gemma2:27b.tar.gz.torrent) |
+| llama2-uncensored | 7B | 2024-08-18 16:32 | 3.4G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/llama2-uncensored:7b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/llama2-uncensored:7b.tar.gz.torrent) |
+| llama3.1 | 8B | 2024-08-19 17:31 | 4.1G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/llama3.1:8b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/llama3.1:8b.tar.gz.torrent) |
+| llama3.1 | 70B | 2024-08-18 19:51 | 35G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/llama3.1:70b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/llama3.1:70b.tar.gz.torrent) |
+| llama3.2 | 1B | 2024-10-07 00:38 | 1.2G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/llama3.2:1b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/llama3.2:1b.tar.gz.torrent) |
+| llama3.2 | 3B | 2024-10-07 00:36 | 1.8G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/llama3.2:3b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/llama3.2:3b.tar.gz.torrent) |
+| llama3 | 8B | 2024-08-18 20:13 | 4.1G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/llama3:8b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/llama3:8b.tar.gz.torrent) |
+| mistral-nemo | 12B | 2024-08-19 15:27 | 6.3G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/mistral-nemo:12b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/mistral-nemo:12b.tar.gz.torrent) |
+| mistral | 7B | 2024-08-18 20:08 | 3.6G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/mistral:7b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/mistral:7b.tar.gz.torrent) |
+| moondream | 1.8B | 2024-08-18 16:29 | 1.4G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/moondream:1.8b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/moondream:1.8b.tar.gz.torrent) |
+| phi3 | 3.8B | 2024-08-18 16:20 | 1.9G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/phi3:3.8b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/phi3:3.8b.tar.gz.torrent) |
+| qwen | 0.5B | 2024-08-19 14:48 | 356M | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/qwen:0.5b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/qwen:0.5b.tar.gz.torrent) |
+| qwen | 32B | 2024-08-19 15:01 | 16G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/qwen:32b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/qwen:32b.tar.gz.torrent) |
 <!-- MODEL_TABLE_END -->
-</details>
 
 Or you can of course just browse the [models folder](https://data.pyenb.network/Github/Ollama/models/) directly and download the model you want.
 
