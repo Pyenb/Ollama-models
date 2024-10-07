@@ -1,4 +1,6 @@
-# Ollama model repository 🦙
+<h1 align="center">
+Ollama model repository 🦙
+</h1>
 
 ![Update download links](https://github.com/Pyenb/Ollama-models/actions/workflows/main.yaml/badge.svg)
 
