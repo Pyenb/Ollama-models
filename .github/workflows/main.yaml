@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests bs4
+          pip install requests bs4 tqdm
 
       - name: Run update script
         run: |
