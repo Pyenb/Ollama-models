@@ -2,9 +2,9 @@
 Ollama model repository 🦙
 </h1>
 
-![Update download links](https://github.com/Pyenb/Ollama-models/actions/workflows/main.yaml/badge.svg)
+![sync models](https://github.com/Pyenb/Ollama-models/actions/workflows/main.yaml/badge.svg)
 
-A few weeks ago I wanted to run [ollama](https://github.com/ollama/ollama/) on a machine, that was not connected to the internet. After a bit of searching, around, I found [this issue](https://github.com/ollama/ollama/issues/696), which basically said that the models are not just available as a download as a standalone file. So I decided to download the models myself, using a machine that had internet access, and make them available for everyone, in form of a compressed folder. This way, setting up your desired model will be as simple as moving a few files around.
+This repository fulfills a simple purpose: to provide models for [ollama](https://github.com/ollama/ollama/) to machines that are not connected to the internet.
 
 ## Table of contents 📚
 
@@ -35,6 +35,7 @@ A few weeks ago I wanted to run [ollama](https://github.com/ollama/ollama/) on a
 | llama2-uncensored | 7B | 2024-08-18 16:32 | 3.4G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/llama2-uncensored:7b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/llama2-uncensored:7b.tar.gz.torrent) |
 | llama3.1 | 8B | 2024-08-19 17:31 | 4.1G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/llama3.1:8b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/llama3.1:8b.tar.gz.torrent) |
 | llama3.1 | 70B | 2024-08-18 19:51 | 35G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/llama3.1:70b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/llama3.1:70b.tar.gz.torrent) |
+| llama3.2-vision | 11B | 2024-11-13 19:53 | 6.7G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/llama3.2-vision:11b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/llama3.2-vision:11b.tar.gz.torrent) |
 | llama3.2 | 1B | 2024-10-07 00:38 | 1.2G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/llama3.2:1b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/llama3.2:1b.tar.gz.torrent) |
 | llama3.2 | 3B | 2024-10-07 00:36 | 1.8G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/llama3.2:3b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/llama3.2:3b.tar.gz.torrent) |
 | llama3 | 8B | 2024-08-18 20:13 | 4.1G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/llama3:8b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/llama3:8b.tar.gz.torrent) |
@@ -42,14 +43,14 @@ A few weeks ago I wanted to run [ollama](https://github.com/ollama/ollama/) on a
 | mistral | 7B | 2024-08-18 20:08 | 3.6G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/mistral:7b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/mistral:7b.tar.gz.torrent) |
 | moondream | 1.8B | 2024-08-18 16:29 | 1.4G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/moondream:1.8b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/moondream:1.8b.tar.gz.torrent) |
 | phi3 | 3.8B | 2024-08-18 16:20 | 1.9G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/phi3:3.8b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/phi3:3.8b.tar.gz.torrent) |
+| qwen2.5-coder | 7B | 2024-11-13 20:27 | 4.3G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/qwen2.5-coder:7b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/qwen2.5-coder:7b.tar.gz.torrent) |
+| qwen2.5-coder | 14B | 2024-11-13 20:25 | 8.2G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/qwen2.5-coder:14b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/qwen2.5-coder:14b.tar.gz.torrent) |
 | qwen | 0.5B | 2024-08-19 14:48 | 356M | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/qwen:0.5b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/qwen:0.5b.tar.gz.torrent) |
 | qwen | 32B | 2024-08-19 15:01 | 16G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/qwen:32b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/qwen:32b.tar.gz.torrent) |
 <!-- MODEL_TABLE_END -->
 
-Or you can of course just browse the [models folder](https://data.pyenb.network/Github/Ollama/models/) directly and download the model you want.
-
 > [!NOTE]
-> I am, as of now, still in the process of downloading and uploading the models, whenever I have time. So please have a bit of patience and see [I want a model that is not listed here, what can I do?](#i-want-a-model-that-is-not-listed-here-what-can-i-do) for more information.
+>  [I want a model that is not listed here, what can I do?](#i-want-a-model-that-is-not-listed-here-what-can-i-do)
 
 ## Manual export 📦
 

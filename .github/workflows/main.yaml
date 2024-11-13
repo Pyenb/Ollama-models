@@ -1,4 +1,4 @@
-name: Update Download Links in README
+name: Sync models
 
 on:
   schedule:
