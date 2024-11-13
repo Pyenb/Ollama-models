@@ -23,7 +23,9 @@ This repository fulfills a simple purpose: to provide models for [ollama](https:
 ## Download links 📥
 
 > [!IMPORTANT]
-> Due to Contabo limiting my bandwidth to only 100 Mbit/s because my STORAGE VPS is exceeding their set average bandwidth, I’ve added torrents and purchased a Seedbox. Feel free to download and seed them! Contabo did suggest an alternative, but it starts at €40/month with about 1/4 of the storage, so that’s definitely not an option.
+> Due to Contabo limiting my bandwidth to only 100 Mbit/s because my STORAGE VPS is exceeding their set average bandwidth, I’ve added torrents and purchased a Seedbox. Feel free to download and seed them!
+>
+> With the current setup, downloading the files via the Torrents is the fastest way to get the models.
 
 <!-- MODEL_TABLE_START -->
 | Model | Parameters | Last Modified | Size | Download Links |
