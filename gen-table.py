@@ -16,47 +16,37 @@ soup = BeautifulSoup(html_content, 'html.parser')
 table = soup.find('table')
 rows = table.find_all('tr')[2:]
 
-markdown_table = "| Model | Parameters | Last Modified | Size | Download Links |\n| --- | --- | --- | --- | --- |\n"
+markdown_table = "| Model | Parameters | Last Modified | Size | Download Link |\n| --- | --- | --- | --- | --- |\n"
 
 # Add tqdm for the progress bar, setting total number of rows to process
 for row in tqdm(rows, desc="Processing rows"):
     columns = row.find_all('td')
     if len(columns) < 4:
         continue
-    
+
     file_name = columns[1].find('a').get_text().strip()
-    
-    # Correcting the logic to skip 'Parent Directory' and 'torrents' directory
-    if file_name == "Parent Directory" or 'torrents' in file_name:
+
+    # Skip 'Parent Directory' and non-torrent files
+    if file_name == "Parent Directory" or not file_name.endswith(".tar.gz.torrent"):
         continue
-    
+
     last_modified = columns[2].get_text().strip()
-    if '1970' in last_modified:
-        continue
-    
     size = columns[3].get_text().strip()
-    
-    file_url = URL + file_name
-    file_name = file_name.replace('.tar.gz', '')
-    
+
+    # Remove '.tar.gz.torrent' to extract model and parameters
+    file_name_base = file_name.replace('.tar.gz.torrent', '')
+
     # Check for ':' to split model and parameters
-    if ':' in file_name:
-        model, parameters = file_name.split(':', 1)
+    if ':' in file_name_base:
+        model, parameters = file_name_base.split(':', 1)
     else:
-        model = file_name
+        model = file_name_base
         parameters = '---'
-    
-    # Check if the corresponding torrent file exists
-    torrent_file = f"{file_name}.tar.gz.torrent"
-    torrent_url = TORRENT_URL + torrent_file
-    
-    # Send a request to check if the torrent file exists
-    torrent_exists = requests.head(torrent_url).status_code == 200
-    
-    torrent_link = f"[Torrent]({torrent_url})" if torrent_exists else '---'
+
+    torrent_url = TORRENT_URL + file_name
     
     # Add the row to the markdown table
-    markdown_table += f"| {model} | {parameters.upper()} | {last_modified} | {size} | [Storage VPS]({file_url}) / {torrent_link} |\n"
+    markdown_table += f"| {model} | {parameters.upper()} | {last_modified} | {size} | [Torrent]({torrent_url}) |\n"
 
 # Read and update the README file
 with open("README.md", "r", encoding="utf8") as file:
