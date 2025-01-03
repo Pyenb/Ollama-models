@@ -31,6 +31,7 @@ This repository fulfills a simple purpose: to provide models for [ollama](https:
 | Model | Parameters | Last Modified | Size | Download Links |
 | --- | --- | --- | --- | --- |
 | codellama | 7B | 2024-08-18 16:48 | 3.4G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/codellama:7b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/codellama:7b.tar.gz.torrent) |
+| deepseek-coder-v2 | 16B | 2025-01-02 23:18 | 5.2G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/deepseek-coder-v2:16b.tar.gz) / --- |
 | gemma2 | 2B | 2024-08-18 15:45 | 1.5G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/gemma2:2b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/gemma2:2b.tar.gz.torrent) |
 | gemma2 | 9B | 2024-08-18 18:24 | 4.8G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/gemma2:9b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/gemma2:9b.tar.gz.torrent) |
 | gemma2 | 27B | 2024-08-19 17:23 | 14G | [Storage VPS](https://data.pyenb.network/Github/Ollama/models/gemma2:27b.tar.gz) / [Torrent](https://data.pyenb.network/Github/Ollama/models/torrents/gemma2:27b.tar.gz.torrent) |
