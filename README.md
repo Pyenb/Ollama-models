@@ -2,6 +2,9 @@
 Ollama model repository 🦙
 </h1>
 
+> [!CAUTION]
+> Hello, as you may have noticed, this repo hasen't been updated in quite some time. This is sadly due to my lack of time and some personal issues. I do still plan on updating this repo again in the future, but I can't give any ETA on when that will be. Thank you for your understanding!
+
 ![sync models](https://github.com/Pyenb/Ollama-models/actions/workflows/main.yaml/badge.svg)
 
 This repository fulfills a simple purpose: to provide models for [ollama](https://github.com/ollama/ollama/) to machines that are not connected to the internet.
